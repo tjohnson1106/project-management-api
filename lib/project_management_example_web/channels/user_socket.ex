@@ -5,8 +5,6 @@ defmodule ProjectManagementExampleWeb.UserSocket do
     {:ok, socket}
   end
 
-  def id(_socket), do: nil
-
   ## Transports
   socket "/socket", HelloWeb.UserSocket,
     websocket: [timeout: 45_000],
